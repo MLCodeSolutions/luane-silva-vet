@@ -183,6 +183,7 @@
 </head>
 
 <body>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
   <div id="vc-boot" role="status" aria-live="polite" aria-label="Carregando o site">
     <div class="vc-boot__inner">
       <div class="vc-boot__mark" aria-hidden="true">
@@ -369,7 +370,7 @@
       </div>
 
       <div class="benefits-grid" data-bento>
-        <div class="benefits-photo" data-reveal="scale">
+        <div class="benefits-photo" data-reveal="left">
           <img decoding="async" src="../assets/img/art/beneficios-casa.svg" alt="Ilustração de casa com estetoscópio e gato" loading="lazy" width="1024" height="1280">
         </div>
 
@@ -445,16 +446,16 @@
         </article>
       </div>
 
-      <div class="service-panel" data-reveal data-reveal-delay="100">
-        <div class="service-list">
-          <div class="service-list__item"><i class="icon-flask-conical" aria-hidden="true"></i><span>Coleta para exames</span></div>
-          <div class="service-list__item"><i class="icon-pill" aria-hidden="true"></i><span>Aplicação de medicamentos</span></div>
-          <div class="service-list__item"><i class="icon-heart-pulse" aria-hidden="true"></i><span>Aferição de pressão com Doppler</span></div>
-          <div class="service-list__item"><i class="icon-droplets" aria-hidden="true"></i><span>Fluidoterapia</span></div>
-          <div class="service-list__item"><i class="icon-clipboard-check" aria-hidden="true"></i><span>Avaliação pré-cirúrgica</span></div>
-          <div class="service-list__item"><i class="icon-bandage" aria-hidden="true"></i><span>Curativos e feridas</span></div>
+      <div class="service-panel">
+        <div class="service-list" data-reveal-group="45">
+          <div class="service-list__item" data-reveal><i class="icon-flask-conical" aria-hidden="true"></i><span>Coleta para exames</span></div>
+          <div class="service-list__item" data-reveal><i class="icon-pill" aria-hidden="true"></i><span>Aplicação de medicamentos</span></div>
+          <div class="service-list__item" data-reveal><i class="icon-heart-pulse" aria-hidden="true"></i><span>Aferição de pressão com Doppler</span></div>
+          <div class="service-list__item" data-reveal><i class="icon-droplets" aria-hidden="true"></i><span>Fluidoterapia</span></div>
+          <div class="service-list__item" data-reveal><i class="icon-clipboard-check" aria-hidden="true"></i><span>Avaliação pré-cirúrgica</span></div>
+          <div class="service-list__item" data-reveal><i class="icon-bandage" aria-hidden="true"></i><span>Curativos e feridas</span></div>
         </div>
-        <div class="service-panel__footer">
+        <div class="service-panel__footer" data-reveal data-reveal-delay="120">
           <p>Não encontrou o que precisa? Pergunte — eu oriento o melhor caminho para o seu pet.</p>
           <a class="btn btn--wine btn--services" href="https://wa.me/5582996795571" target="_blank" rel="noopener noreferrer" data-wa>
             <i class="icon-message-circle" aria-hidden="true"></i> Falar sobre meu pet
@@ -668,11 +669,11 @@
     <!-- ============ 7. SOBRE + REDE DE PARCEIROS ============ -->
     <section class="section" id="sobre">
       <div class="about-grid">
-        <div class="about-photo" data-reveal="scale">
+        <div class="about-photo" data-reveal="left">
           <img decoding="async" src="../assets/img/client/luane-retrato.jpg" alt="Luane Silva, médica veterinária, ao lado de um cachorro branco" loading="lazy" width="850" height="850">
         </div>
 
-        <div class="about-copy" data-reveal>
+        <div class="about-copy" data-reveal="right">
           <span class="eyebrow">Sobre a Luane</span>
           <p class="about-quote">"Cada paciente é único — e merece um cuidado individualizado, humanizado e baseado em ciência."</p>
           <p class="about-text">Prazer, sou Luane Silva, médica veterinária formada pela Universidade Federal de Alagoas (UFAL). Acredito que cada paciente é único e merece um atendimento individualizado, humanizado e baseado no conhecimento científico, respeitando suas particularidades e necessidades. Atendo em domicílio em Arapiraca e cidades circunvizinhas, para que a consulta aconteça com calma, no ambiente em que o seu pet se sente seguro. Sou casada, mãe de 6 cães, e tenho foco em clínica geral — com carinho especial por geriatria, pediatria e nefrologia.</p>
@@ -784,13 +785,13 @@
   <!-- ============ CONTATO ============ -->
   <section class="section--contact" id="contato">
     <div class="contact-grid" data-reveal-group="70">
-      <a class="contact-card contact-card--wine" data-reveal href="https://wa.me/5582996795571" target="_blank" rel="noopener noreferrer" data-wa>
+      <a class="contact-card contact-card--wine" data-reveal="left" href="https://wa.me/5582996795571" target="_blank" rel="noopener noreferrer" data-wa>
         <i class="contact-card__icon icon-message-circle" aria-hidden="true"></i>
         <span class="contact-card__label">WhatsApp</span>
         <strong class="contact-card__value" data-config="phoneDisplay">(82) 99679-5571</strong>
       </a>
 
-      <a class="contact-card contact-card--soft" data-reveal href="https://www.instagram.com/luanesilva.vet" target="_blank" rel="noopener noreferrer" data-social="instagram">
+      <a class="contact-card contact-card--soft" data-reveal="right" href="https://www.instagram.com/luanesilva.vet" target="_blank" rel="noopener noreferrer" data-social="instagram">
         <i class="contact-card__icon icon-instagram" aria-hidden="true"></i>
         <span class="contact-card__label">Instagram</span>
         <strong class="contact-card__value">@luanesilva.vet</strong>

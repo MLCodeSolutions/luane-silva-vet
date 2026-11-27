@@ -202,6 +202,17 @@ img.is-zoomable {
   display: none;
 }
 
+.is-lite .photo-badge__card,
+.is-lite .pill-status i,
+.is-lite .wa-float::after {
+  animation: none !important;
+}
+
+.is-lite .wa-float::after,
+.is-lite .btn::after {
+  display: none;
+}
+
 .is-lite .site-header {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;

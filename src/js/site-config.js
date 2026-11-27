@@ -15,14 +15,13 @@ window.SITE = {
   domain: ''
 };
 
-/* Modo leve: celular pequeno, economia de dados ou 2G. */
+/* Modo leve: economia de dados ou 2G (o mobile recebe as animações normalmente). */
 (function () {
   try {
     var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
     var lite = conn.saveData === true ||
       /(^|-)2g$/.test(conn.effectiveType || '') ||
-      (window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)').matches) ||
-      window.innerWidth < 600;
+      (window.matchMedia && window.matchMedia('(prefers-reduced-data: reduce)').matches);
 
     if (lite) document.documentElement.classList.add('is-lite');
   } catch (error) {

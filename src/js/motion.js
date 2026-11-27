@@ -9,26 +9,70 @@
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Header: sombra ao rolar ---------- */
+  /* ---------- Header + barra de progresso ---------- */
 
   var header = document.querySelector('.site-header');
+  var progress = document.querySelector('[data-scroll-progress]');
+  var ticking = false;
 
-  if (header) {
-    var ticking = false;
+  function updateScrollUI() {
+    var offset = window.pageYOffset || 0;
 
-    function updateHeader() {
-      header.classList.toggle('is-scrolled', window.pageYOffset > 8);
-      ticking = false;
+    if (header) header.classList.toggle('is-scrolled', offset > 8);
+
+    if (progress) {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - doc.clientHeight;
+      progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, offset / max) : 0) + ')';
     }
 
-    function onScroll() {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(updateHeader);
-    }
+    ticking = false;
+  }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    updateHeader();
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(updateScrollUI);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('load', updateScrollUI);
+  updateScrollUI();
+
+  /* ---------- Navegação ativa por seção ---------- */
+
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link[href^="#"]'));
+
+  if (navLinks.length && 'IntersectionObserver' in window) {
+    var byId = {};
+
+    navLinks.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      if (id) byId[id] = link;
+    });
+
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+
+        var active = byId[entry.target.id];
+        if (!active) return;
+
+        navLinks.forEach(function (link) {
+          link.classList.remove('is-active');
+        });
+        active.classList.add('is-active');
+      });
+    }, {
+      rootMargin: '-45% 0px -50% 0px',
+      threshold: 0
+    });
+
+    Object.keys(byId).forEach(function (id) {
+      var section = document.getElementById(id);
+      if (section) sectionObserver.observe(section);
+    });
   }
 
   /* ---------- Reveals: respeitar movimento reduzido ---------- */
