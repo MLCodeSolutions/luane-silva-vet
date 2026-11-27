@@ -57,7 +57,7 @@ Pré-requisito: Node.js 18+.
 node _tools/build.mjs --local
 
 # Build de produção apontando para a tag que será publicada
-node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=v1.0.3
+node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=v1.0.4
 ```
 
 O build:
@@ -101,7 +101,7 @@ git push origin v1.0.1
 - A tag é criada **depois** do commit do `dist`, então a própria tag contém a página e os assets finais.
 - Nunca use `--tag=<commit>` de um commit que ainda não tem `dist/`: o loader apontaria para uma página inexistente naquele commit.
 - Qualquer alteração exige **nova tag** (`v1.0.2`, ...). Nunca mover, apagar ou reutilizar uma tag já publicada.
-- Publicação atual: **v1.0.3** (a `v1.0.0` ficou com o loader apontando para o commit inicial, sem `dist/`).
+- Publicação atual: **v1.0.4** (a `v1.0.0` ficou com o loader apontando para o commit inicial, sem `dist/`).
 
 Verificação rápida das URLs:
 
