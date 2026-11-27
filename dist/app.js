@@ -141,7 +141,7 @@ window.SITE = {
     var suffix = single ? second : (parts[2] || '');
 
     function text(value) {
-      if (single) return Math.round(value) + suffix;
+      if (single) return Math.round(to * value) + suffix;
       return Math.round(from * value) + '\u2013' + Math.round(to * value) + suffix;
     }
 
