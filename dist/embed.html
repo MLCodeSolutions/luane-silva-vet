@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luane Silva</title>
+<style>html,body{margin:0;height:100%;background:#fbf6f2}#app-fallback{font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:#7e3b4b;padding:24px;text-align:center}#app-fallback a{color:#7e3b4b}</style>
+</head>
+<body>
+<p id="app-fallback">Carregando o site…</p>
+<script>
+(function () {
+  var url = "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/index.html";
+  var fallback = document.getElementById('app-fallback');
+  var timer = setTimeout(showFallback, 8000);
+
+  function showFallback() {
+    if (!fallback || !document.body.contains(fallback)) return;
+    fallback.textContent = 'Não foi possível carregar o site. ';
+    var link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'Abrir em nova aba';
+    fallback.appendChild(link);
+  }
+
+  fetch(url, { cache: 'force-cache' })
+    .then(function (response) {
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      return response.text();
+    })
+    .then(function (html) {
+      clearTimeout(timer);
+      document.open();
+      document.write(html);
+      document.close();
+    })
+    .catch(showFallback);
+}());
+</script>
+<noscript><p><a href="https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/index.html" target="_blank" rel="noopener noreferrer">Abrir o site</a></p></noscript>
+</body>
+</html>
