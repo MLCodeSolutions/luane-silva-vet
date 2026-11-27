@@ -47,8 +47,8 @@ Pré-requisito: Node.js 18+.
 # QA local (gera dist/preview.html com caminhos ../assets)
 node _tools/build.mjs --local
 
-# Build de produção com os assets no commit imutável atual
-node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=<COMMIT_SHA>
+# Build de produção apontando para a tag que será publicada
+node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=v1.0.1
 ```
 
 O build:
@@ -67,7 +67,7 @@ O teste local pode ser servido com `python -m http.server 8765` na raiz e `http:
 
 Pré-requisitos: repositório **público** (o jsDelivr só serve repositórios públicos) e um token com permissão de `repo`, usado apenas em variável de ambiente/one-shot. Nunca cole o token no chat, em arquivos ou no remote do git.
 
-Fluxo (o build precisa de um commit que já contenha os assets e a página):
+Fluxo (o build aponta para a tag que será criada no commit seguinte, para que a tag contenha o `dist/` final):
 
 ```powershell
 # 1) Commit A — fonte, assets e config
@@ -75,23 +75,24 @@ git add .
 git commit -m "feat: site da Luane Silva"
 git push origin main
 
-# 2) Build de produção apontando para o commit A
-$sha = git rev-parse HEAD
-node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=$sha
+# 2) Build de produção apontando para a TAG NOVA (ex.: v1.0.1)
+node _tools/build.mjs --owner=MLCodeSolutions --repo=luane-silva-vet --tag=v1.0.1
 
-# 3) Commit B — dist/ (jsDelivr serve os arquivos da tag)
+# 3) Commit B — dist/
 git add dist
 git commit -m "build: dist para Google Sites"
 git push origin main
 
-# 4) Tag imutável
-git tag -a v1.0.0 -m "v1.0.0"
-git push origin v1.0.0
+# 4) Tag imutável no commit que já contém o dist
+git tag -a v1.0.1 -m "v1.0.1"
+git push origin v1.0.1
 ```
 
 - O `dist/` é **commitado**.
-- Qualquer alteração exige **nova tag** (`v1.0.1`, ...). Nunca mover, apagar ou reutilizar uma tag.
-- O loader usa o commit da página (não a tag) porque o jsDelivr pode levar alguns minutos para indexar tags.
+- A tag é criada **depois** do commit do `dist`, então a própria tag contém a página e os assets finais.
+- Nunca use `--tag=<commit>` de um commit que ainda não tem `dist/`: o loader apontaria para uma página inexistente naquele commit.
+- Qualquer alteração exige **nova tag** (`v1.0.2`, ...). Nunca mover, apagar ou reutilizar uma tag já publicada.
+- Publicação atual: **v1.0.1** (a `v1.0.0` ficou com o loader apontando para o commit inicial, sem `dist/`).
 
 Verificação rápida das URLs:
 

@@ -1,172 +1,172 @@
 {
   "owner": "MLCodeSolutions",
   "repo": "luane-silva-vet",
-  "tag": "989cd89df53d61a0ab2ae46c9ce0a1152e974f97",
-  "base": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/",
-  "generatedAt": "2026-11-27T01:24:31.569Z",
-  "totalBytes": 1182201,
+  "tag": "v1.0.1",
+  "base": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/",
+  "generatedAt": "2026-11-27T01:25:46.588Z",
+  "totalBytes": 1178937,
   "files": [
     {
       "path": "assets/fonts/bricolage-grotesque-latin-ext.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/bricolage-grotesque-latin-ext.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/bricolage-grotesque-latin-ext.woff2",
       "mime": "font/woff2",
       "bytes": 30736
     },
     {
       "path": "assets/fonts/bricolage-grotesque-latin.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/bricolage-grotesque-latin.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/bricolage-grotesque-latin.woff2",
       "mime": "font/woff2",
       "bytes": 76888
     },
     {
       "path": "assets/fonts/hanken-grotesk-latin-ext.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/hanken-grotesk-latin-ext.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/hanken-grotesk-latin-ext.woff2",
       "mime": "font/woff2",
       "bytes": 19588
     },
     {
       "path": "assets/fonts/hanken-grotesk-latin.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/hanken-grotesk-latin.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/hanken-grotesk-latin.woff2",
       "mime": "font/woff2",
       "bytes": 34704
     },
     {
       "path": "assets/fonts/instrument-serif-italic-latin-ext.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/instrument-serif-italic-latin-ext.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/instrument-serif-italic-latin-ext.woff2",
       "mime": "font/woff2",
       "bytes": 12384
     },
     {
       "path": "assets/fonts/instrument-serif-italic-latin.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/instrument-serif-italic-latin.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/instrument-serif-italic-latin.woff2",
       "mime": "font/woff2",
       "bytes": 22128
     },
     {
       "path": "assets/fonts/instrument-serif-regular-latin-ext.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/instrument-serif-regular-latin-ext.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/instrument-serif-regular-latin-ext.woff2",
       "mime": "font/woff2",
       "bytes": 11604
     },
     {
       "path": "assets/fonts/instrument-serif-regular-latin.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/instrument-serif-regular-latin.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/instrument-serif-regular-latin.woff2",
       "mime": "font/woff2",
       "bytes": 21032
     },
     {
       "path": "assets/fonts/lucide.woff2",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/fonts/lucide.woff2",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/fonts/lucide.woff2",
       "mime": "font/woff2",
       "bytes": 219184
     },
     {
       "path": "assets/img/art/beneficios-casa.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/beneficios-casa.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/beneficios-casa.svg",
       "mime": "image/svg+xml",
       "bytes": 1894
     },
     {
       "path": "assets/img/art/sil-01-casa.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-01-casa.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-01-casa.svg",
       "mime": "image/svg+xml",
       "bytes": 1087
     },
     {
       "path": "assets/img/art/sil-02-consulta.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-02-consulta.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-02-consulta.svg",
       "mime": "image/svg+xml",
       "bytes": 1111
     },
     {
       "path": "assets/img/art/sil-03-vacina.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-03-vacina.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-03-vacina.svg",
       "mime": "image/svg+xml",
       "bytes": 1459
     },
     {
       "path": "assets/img/art/sil-06-cao.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-06-cao.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-06-cao.svg",
       "mime": "image/svg+xml",
       "bytes": 1382
     },
     {
       "path": "assets/img/art/sil-07-gato.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-07-gato.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-07-gato.svg",
       "mime": "image/svg+xml",
       "bytes": 1211
     },
     {
       "path": "assets/img/art/sil-10-exame.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-10-exame.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-10-exame.svg",
       "mime": "image/svg+xml",
       "bytes": 1252
     },
     {
       "path": "assets/img/art/sil-11-jardim.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/art/sil-11-jardim.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/art/sil-11-jardim.svg",
       "mime": "image/svg+xml",
       "bytes": 1233
     },
     {
       "path": "assets/img/brand/logo-luane-mark.png",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/brand/logo-luane-mark.png",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/brand/logo-luane-mark.png",
       "mime": "image/png",
       "bytes": 74872
     },
     {
       "path": "assets/img/brand/logo-luane-silva.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/brand/logo-luane-silva.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/brand/logo-luane-silva.svg",
       "mime": "image/svg+xml",
       "bytes": 51094
     },
     {
       "path": "assets/img/client/luane-retrato.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/client/luane-retrato.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/client/luane-retrato.jpg",
       "mime": "image/jpeg",
       "bytes": 67526
     },
     {
       "path": "assets/img/favicon.svg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/favicon.svg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/favicon.svg",
       "mime": "image/svg+xml",
       "bytes": 677
     },
     {
       "path": "assets/img/social/og-luane.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/assets/img/social/og-luane.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/assets/img/social/og-luane.jpg",
       "mime": "image/jpeg",
       "bytes": 90379
     },
     {
       "path": "dist/app.css",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/app.css",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/dist/app.css",
       "mime": "text/css; charset=utf-8",
-      "bytes": 138296
+      "bytes": 137990
     },
     {
       "path": "dist/app.js",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/app.js",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/dist/app.js",
       "mime": "text/javascript; charset=utf-8",
       "bytes": 30370
     },
     {
       "path": "dist/embed.html",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/embed.html",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/dist/embed.html",
       "mime": "text/html; charset=utf-8",
-      "bytes": 1675
+      "bytes": 1607
     },
     {
       "path": "dist/index-external.html",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/index-external.html",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/dist/index-external.html",
       "mime": "text/html; charset=utf-8",
-      "bytes": 49957
+      "bytes": 48631
     },
     {
       "path": "dist/index.html",
-      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@989cd89df53d61a0ab2ae46c9ce0a1152e974f97/dist/index.html",
+      "url": "https://cdn.jsdelivr.net/gh/MLCodeSolutions/luane-silva-vet@v1.0.1/dist/index.html",
       "mime": "text/html; charset=utf-8",
-      "bytes": 218478
+      "bytes": 216914
     }
   ]
 }
