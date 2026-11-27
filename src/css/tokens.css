@@ -1,0 +1,92 @@
+/* ==========================================================================
+   tokens.css — design tokens do site da Luane Silva
+   Paleta da marca: rosa, verde-sálvia, creme e cacau.
+   ========================================================================== */
+
+:root {
+  /* Cor — rosa profundo / marca */
+  --wine: #7e3b4b;
+  --wine-deep: #5f2b38;
+  --wine-bright: #a05065;
+  --wine-muted: #6e3b48;
+  --wine-soft: #9c6070;
+
+  /* Cor — cremes e areias */
+  --cream: #fbf6f2;
+  --cream-2: #f6eae8;
+  --peach: #f7d6dd;
+  --peach-light: #fcebef;
+  --sand: #f0dcd6;
+  --sand-deep: #e7c9c2;
+
+  /* Cor — texto */
+  --ink: #2f2224;
+  --ink-2: #3e2e30;
+  --ink-3: #4e3c3e;
+  --ink-4: #5e4a4c;
+
+  /* Cor — acentos */
+  --gold: #c9963f;        /* estrelas */
+  --moss: #6f7d5c;        /* verde-sálvia */
+  --moss-light: #e7ebdd;  /* fundo verde suave */
+  --moss-mid: #5e6b4d;    /* hover verde (botão) */
+  --moss-chip: #dce4cd;   /* hover verde (chip) */
+
+  --white: #ffffff;
+
+  /* Tipografia */
+  --font-title: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-icon: "lucide";
+
+  --fs-body: 17px;
+  --lh-body: 1.6;
+
+  /* Raios */
+  --r-9: 9px;
+  --r-12: 12px;
+  --r-13: 13px;
+  --r-14: 14px;
+  --r-16: 16px;
+  --r-18: 18px;
+  --r-20: 20px;
+  --r-24: 24px;
+  --r-28: 28px;
+  --r-32: 32px;
+  --r-36: 36px;
+  --r-40: 40px;
+  --r-pill: 99px;
+
+  /* Layout */
+  --container: 1320px;
+  --gutter: clamp(16px, 3vw, 32px);
+  --gap: 14px;
+  --section-space: clamp(80px, 10vw, 140px);
+  --header-offset: 96px;
+
+  /* Movimento */
+  --ease: 0.25s ease;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-reveal: 700ms;
+  --dur-hover: 240ms;
+  --fade-time: 1.4s;
+
+  /* Sombras */
+  --shadow-hero: 0 12px 32px -8px rgba(247, 214, 221, 0.5);
+  --shadow-video: 0 30px 60px -30px rgba(95, 43, 56, 0.5);
+  --shadow-club-video: 0 40px 80px -30px rgba(0, 0, 0, 0.6);
+  --shadow-card-hover: 0 24px 48px -24px rgba(126, 59, 75, 0.35);
+  --shadow-qr: 0 12px 30px -12px rgba(95, 43, 56, 0.4);
+  --shadow-mobile-bar: 0 16px 40px -10px rgba(95, 43, 56, 0.6);
+
+  /* Breakpoints documentados (CSS não suporta variáveis em media query):
+       1180px — esconde nav desktop, mostra burger
+       1100px — grid de 4 colunas → 2
+       1024px — padding do rodapé (Elementor)
+        900px — bento → 1 coluna, header mobile, centralização, barra fixa
+        767px — padding do rodapé (Elementor)
+        600px — grid de 2 → 1
+        520px — esconde o texto "Agendar"
+  */
+}
